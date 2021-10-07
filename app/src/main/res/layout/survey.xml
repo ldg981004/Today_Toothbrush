@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+    <ImageButton
+        android:id="@+id/imbtnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:background="#00000000"
+        app:srcCompat="@drawable/ic_keyboard_backspace_black_24dp"
+        tools:ignore="VectorDrawableCompat" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="30dp"
+            tools:context=".MainActivity">
+
+                <TextView
+                    android:id="@+id/tvAvgCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:text="1. 하루 양치 평균 횟수"
+                    android:textSize="20dp" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rbtn1-1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:text="0회" />
+
+                    <RadioButton
+                        android:id="@+id/rBtn1-2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:text="1회" />
+
+                    <RadioButton
+                        android:id="@+id/rBtn1-3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:text="2회" />
+
+                    <RadioButton
+                        android:id="@+id/rBtn1-4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:text="3회" />
+
+                    <RadioButton
+                        android:id="@+id/rBtn1-5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:text="3회이상" />
+
+                </RadioGroup>
+
+            <TextView
+                    android:id="@+id/tvAvgTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:text="2. 평균 양치 시간"
+                    android:textSize="20dp" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rbtn2-1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:text="1분 30초 미만" />
+
+                    <RadioButton
+                        android:id="@+id/rbtn2-2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:text="1분 30초 이상 3분 미만" />
+
+                    <RadioButton
+                        android:id="@+id/rbtn2-3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:text="3분 이상" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/tvDentFre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:text="3. 치과 이용 빈도"
+                    android:textSize="20dp" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rbtn3-1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:text="0회" />
+
+                    <RadioButton
+                        android:id="@+id/rbtn3-2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:text="1회" />
+
+                    <RadioButton
+                        android:id="@+id/rbtn3-3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:text="2회" />
+
+                    <RadioButton
+                        android:id="@+id/rbtn3-4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:text="3회" />
+
+                    <RadioButton
+                        android:id="@+id/rbtn3-5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:text="3회이상" />
+
+                </RadioGroup>
+
+            <TextView
+                android:id="@+id/tvUseSub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="4. 보조 구강 기구 사용 여부"
+                android:textSize="20dp" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rbtn4-1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="0회" />
+
+                <RadioButton
+                    android:id="@+id/rbtn4-2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="1회" />
+
+                <RadioButton
+                    android:id="@+id/rbtn4-3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="2회" />
+
+                <RadioButton
+                    android:id="@+id/rbtn4-4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="3회" />
+
+                <RadioButton
+                    android:id="@+id/rbtn4-5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="3회이상" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tvSickTooth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="5. 이 시림 정도"
+                android:textSize="20dp" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rbtn5-1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="0회" />
+
+                <RadioButton
+                    android:id="@+id/rbtn5-2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="1회" />
+
+                <RadioButton
+                    android:id="@+id/rbtn5-3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="2회" />
+
+                <RadioButton
+                    android:id="@+id/rbtn5-4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="3회" />
+
+                <RadioButton
+                    android:id="@+id/rbtn5-5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="3회이상"
+                    android:layout_marginBottom="30dp" />
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btnSub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#D0EEFF"
+                android:text="제출하기" />
+
+        </LinearLayout>
+        </ScrollView>
+
+
+</LinearLayout>
